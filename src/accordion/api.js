@@ -1,4 +1,4 @@
-export const RiskData =[
+export const RiskData = [
     {
         "choices": [
             {
@@ -18,7 +18,7 @@ export const RiskData =[
                 "option": "Less than 30 Years"
             },
             {
-                "score": "5",
+                "score": 5,
                 "option": "hi"
             }
         ],
