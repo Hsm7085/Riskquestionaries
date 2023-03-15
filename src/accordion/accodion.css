@@ -44,10 +44,16 @@
     padding-left: 10px;
   }
   .input{
-    font-size: .75em;
+    font-size: .8em;
     width:100%;
     border-radius: 4px;
   }
+  input[type='radio']{
+    margin-right:5px;
+    position: relative;
+    top:2px;
+  }
+ 
   .data{
     font-size: .75em;
     width:100%;
@@ -115,7 +121,9 @@ button[type='submit']{
 }
 
 .show{
+    margin-top: 8px;
     display:block;
+    
 }
 .notshow{
     display:none;

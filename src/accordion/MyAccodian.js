@@ -21,14 +21,14 @@ export default function MyAccodian(props) {
 
         { props.data.map((id,i)=>{
          
-     return <div className="container"  >
+     return <div className="container" key={i} >
       
       <div  onClick={()=>{toggle(i)}}>
       <span className='design'>{id.serialNo}{". "}{id.question} </span>
        <span className='arrow'>{select===i ? <KeyboardArrowUpIcon/> : <KeyboardArrowDownIcon/>}</span>
        </div>
       {
-         <p className={select===i? 'show':'notshow'}>
+         <div className={select===i? 'show':'notshow'}>
           {
          
           id.choices.map((cal)=>{ 
@@ -36,7 +36,7 @@ export default function MyAccodian(props) {
            
           })
         }
-          </p>
+          </div>
         
          
       }

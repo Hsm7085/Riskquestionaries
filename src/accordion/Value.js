@@ -1,11 +1,11 @@
 import React from 'react'
 
-export default function Value({option,i,set}) {
-  // const [data,setdata] = useState(false);
+export default function Value({score,option,i,set}) {
   return (
     <div className="input">
-      <input type="radio"  name={i} required value={option} onClick={(e)=>set(i,e.target.value)}  />{option}
-                                                     
+      <label htmlFor={`opt${score}${i}`}>
+      <input type="radio"  name={i} id={`opt${score}${i}`} value={option} onClick={(e)=>set(i,e.target.value)}  />{option}
+      </label>                                           
     </div>  
   )
 }
